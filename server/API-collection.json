@@ -1,0 +1,705 @@
+{
+  "v": 7,
+  "name": "Ecommerce API",
+  "folders": [
+    {
+      "v": 7,
+      "name": "Products",
+      "folders": [],
+      "requests": [
+        {
+          "v": "12",
+          "name": "Get All Products",
+          "method": "GET",
+          "endpoint": "<<baseUrl>>/products",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": ""
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "Get Product By ID",
+          "method": "GET",
+          "endpoint": "<<baseUrl>>/products/<<id_abca>>",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "Create Product",
+          "method": "POST",
+          "endpoint": "<<baseUrl>>/products",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "active": true,
+              "description": ""
+            },
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": "1"
+            },
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MTcyYTZmNGVjYTcwOTc0ZjgzYWM0NCIsInVzZXJuYW1lIjoiYWxpY2UxMjEzMSIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NjM0ODgwMSwiZXhwIjoxNzQ2MzUyNDAxfQ.7XctO6E0f2iWouoO0MW2xEpq35EtNjcwGsKd6YNDWS4",
+              "active": false,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\"name\":\"phone4\",\"price\":400,\"category\":\"6803b60d8aef4824ec1abad8\"}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "Update Product",
+          "method": "PUT",
+          "endpoint": "<<baseUrl>>/products/<<id_abca>>",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": "1"
+            },
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MTcyYTZmNGVjYTcwOTc0ZjgzYWM0NCIsInVzZXJuYW1lIjoiYWxpY2UxMjEzMSIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NjM0ODgwMSwiZXhwIjoxNzQ2MzUyNDAxfQ.7XctO6E0f2iWouoO0MW2xEpq35EtNjcwGsKd6YNDWS4",
+              "active": false,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\"price\":11003,\n\"description\":12313}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "Delete Product",
+          "method": "DELETE",
+          "endpoint": "<<baseUrl>>/products/681728b84eca70974f83abe8",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": "1"
+            },
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MTcyYTZmNGVjYTcwOTc0ZjgzYWM0NCIsInVzZXJuYW1lIjoiYWxpY2UxMjEzMSIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NjM0ODgwMSwiZXhwIjoxNzQ2MzUyNDAxfQ.7XctO6E0f2iWouoO0MW2xEpq35EtNjcwGsKd6YNDWS4",
+              "active": false,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authActive": true,
+        "authType": "inherit"
+      },
+      "headers": [],
+      "_ref_id": "coll_m9oau0wu_705345ff-c072-45b6-bd0e-cd544a1bdae9"
+    },
+    {
+      "v": 7,
+      "name": "Categories",
+      "folders": [],
+      "requests": [
+        {
+          "v": "12",
+          "name": "Get All Categories",
+          "method": "GET",
+          "endpoint": "<<baseUrl>>/categories",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzMjI1NzAsImV4cCI6MTc0NjMyNjE3MH0.5qBvk3JD2zf2be0nKY_6Cut1oR_pS3szPHKqGGZ-kTs",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "Get Category By ID",
+          "method": "GET",
+          "endpoint": "<<baseUrl>>/categories/<<aaa_category_id>>",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzMjI1NzAsImV4cCI6MTc0NjMyNjE3MH0.5qBvk3JD2zf2be0nKY_6Cut1oR_pS3szPHKqGGZ-kTs",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "Create Category",
+          "method": "POST",
+          "endpoint": "<<baseUrl>>/categories",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            },
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MTcyYTZmNGVjYTcwOTc0ZjgzYWM0NCIsInVzZXJuYW1lIjoiYWxpY2UxMjEzMSIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NjM0ODgwMSwiZXhwIjoxNzQ2MzUyNDAxfQ.7XctO6E0f2iWouoO0MW2xEpq35EtNjcwGsKd6YNDWS4",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\"name\":\"aaAaaaaaaaaa\",\"description\":\"bbbb\"}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "Update Category",
+          "method": "PUT",
+          "endpoint": "<<baseUrl>>/categories/681728da4eca70974f83abf0",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            },
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MTcyYTZmNGVjYTcwOTc0ZjgzYWM0NCIsInVzZXJuYW1lIjoiYWxpY2UxMjEzMSIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NjM0ODgwMSwiZXhwIjoxNzQ2MzUyNDAxfQ.7XctO6E0f2iWouoO0MW2xEpq35EtNjcwGsKd6YNDWS4",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\"description\":\"new description1\"}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "\tDelete Category",
+          "method": "DELETE",
+          "endpoint": "<<baseUrl>>/categories/681728f44eca70974f83abf4",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            },
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MTcyYTZmNGVjYTcwOTc0ZjgzYWM0NCIsInVzZXJuYW1lIjoiYWxpY2UxMjEzMSIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NjM0ODgwMSwiZXhwIjoxNzQ2MzUyNDAxfQ.7XctO6E0f2iWouoO0MW2xEpq35EtNjcwGsKd6YNDWS4",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authActive": true,
+        "authType": "inherit"
+      },
+      "headers": [],
+      "_ref_id": "coll_m9obr2ix_2db79880-aecf-4a4a-9e34-1c9439847cf3"
+    },
+    {
+      "v": 7,
+      "name": "Orders",
+      "folders": [],
+      "requests": [
+        {
+          "v": "12",
+          "name": "\tGet All Orders",
+          "method": "GET",
+          "endpoint": "<<baseUrl>>/orders",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzMjI1NzAsImV4cCI6MTc0NjMyNjE3MH0.5qBvk3JD2zf2be0nKY_6Cut1oR_pS3szPHKqGGZ-kTs",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "\tGet Order By ID",
+          "method": "GET",
+          "endpoint": "<<baseUrl>>/orders/<<order_id>>",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzMjI1NzAsImV4cCI6MTc0NjMyNjE3MH0.5qBvk3JD2zf2be0nKY_6Cut1oR_pS3szPHKqGGZ-kTs",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "\tCreate Order",
+          "method": "POST",
+          "endpoint": "<<baseUrl>>/orders",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"items\": [\n    {\n      \"product\": \"6816c4c64eca70974f839f9c\",  \n      \"quantity\": 3\n    }\n  ]\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "\tUpdate Order",
+          "method": "PUT",
+          "endpoint": "<<baseUrl>>/orders/<<order_id>>",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzMjI1NzAsImV4cCI6MTc0NjMyNjE3MH0.5qBvk3JD2zf2be0nKY_6Cut1oR_pS3szPHKqGGZ-kTs",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\"status\":\"shipped\"}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "\tDelete Order",
+          "method": "DELETE",
+          "endpoint": "<<baseUrl>>/orders/6817297a4eca70974f83ac11",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m9obw3uo_9f01bb9c-8f29-49d4-9901-b27ebbd8e070"
+    },
+    {
+      "v": 7,
+      "name": "user",
+      "folders": [],
+      "requests": [
+        {
+          "v": "12",
+          "name": "create user",
+          "method": "POST",
+          "endpoint": "<<baseUrl>>/auth/register",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"username\": \"alice12\",\n  \"password\": \"hunter2\",\n  \"secret\": \"MY_ADMIN_SECRET\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "login user",
+          "method": "POST",
+          "endpoint": "<<baseUrl>>/auth/login",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\"username\":\"yifan\",\"password\":\"123456\"}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m9pmacvz_1f82fcea-c30a-4ab9-baca-28df3031430c"
+    },
+    {
+      "v": 7,
+      "name": "Public",
+      "folders": [],
+      "requests": [
+        {
+          "v": "12",
+          "name": "get all product",
+          "method": "GET",
+          "endpoint": "<<public>>/products",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "get product by id",
+          "method": "GET",
+          "endpoint": "<<public>>/products/<<id_abca>>",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "get all categories",
+          "method": "GET",
+          "endpoint": "<<public>>/categories",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "get category by id",
+          "method": "GET",
+          "endpoint": "<<public>>/categories/<<aaa_category_id>>",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authActive": true,
+        "authType": "inherit"
+      },
+      "headers": [],
+      "_ref_id": "coll_m9tzzc7m_b6cc52e3-a4a2-419e-9757-f558febc32cb"
+    },
+    {
+      "v": 7,
+      "name": "cart",
+      "folders": [],
+      "requests": [
+        {
+          "v": "12",
+          "name": "get cart",
+          "method": "GET",
+          "endpoint": "https://echo.hoppscotch.io",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "12",
+          "name": "post",
+          "method": "POST",
+          "endpoint": "<<baseUrl>>/cart",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDkxOWQ3NzJiOTZiNzE5YmQxZjRmZiIsInVzZXJuYW1lIjoieWlmYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYzNDcxNjcsImV4cCI6MTc0NjM1MDc2N30.0Q-7H27qFtGGptiCqDHxhBvPnLze3ai4t_hBLpE7F2Y",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_ma9dy4ii_78996913-0ae6-4ce5-ab71-b34ae4a52112"
+    }
+  ],
+  "requests": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "headers": [],
+  "_ref_id": "coll_m9oaru7v_46700983-cfce-443b-92de-50b259e066ac"
+}
